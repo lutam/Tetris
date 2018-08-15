@@ -1,0 +1,7 @@
+<div id='chessboard'  [ngStyle]="{'width' : chessboardWidth, 'height': chessboardHeight}">
+	<div *ngFor="let slot_row of this.slots; let i= index" >
+		<div *ngFor="let slot of slot_row; let j= index" class="slot slot{{slot.value}}" [ngStyle]="{'width': slotWidth, 'height': slotWidth}">
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,5 @@
+
+export const CONFIG_HORIZONTAL_GRID=10;
+export const CONFIG_VERTICAL_GRID=15;
+
+export const CONFIG_SLOT_WIDTH = 40;

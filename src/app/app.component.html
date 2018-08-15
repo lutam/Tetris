@@ -1,0 +1,29 @@
+<h1 [class.popupped]="isGameOver" style="position: absolute; z-index: 10; display: none; height:150px; top:50px; background-color: rgba(0.7,23,74,140); width: 50%; margin-left: 25%; color:yellow;">
+	GAME OVER <br>
+				<button (click)='restart()'>RESTART</button>
+
+</h1>
+
+<div id='app' [style.width.px]='appWidth' >
+	<aside >
+		<div id='dashboard' style="float: left;">
+			<i class="ctrl fa fa-play" (click)='pause()'></i>
+			
+			<i class="ctrl fa fa-pause" (click)='restart()'></i>
+		</div>	
+		<app-next style='float:left;' [nextId]='nextId'></app-next>
+
+		<div id='score' >
+			<div>
+			<h2>SCORE</h2> 
+			<p>{{score}}</p>
+			</div>
+			<div>
+			<h2>BEST</h2>
+			<p>{{bestScore}}</p>
+			</div>
+		</div>
+	</aside>
+	<app-chessboard (changeNext)="nextId= $event" (declareGameOver)='gameOver()' (updateScore)="updateScore($event)" [gameId]='gameId'></app-chessboard>
+	
+</div>

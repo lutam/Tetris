@@ -1,0 +1,13 @@
+
+#chessboard{ display:block; margin-left:auto; margin-right:auto; float:left; } 
+
+.slot{ float:left; border: 1px solid #3db7cc;
+  box-sizing: border-box; background-color: rgba(255, 255, 255, 0.45); box-sizing:border-box; }
+
+.slot1{ background:#1E88E5; } /*celeste*/
+.slot2{ background: #69F0AE; } /*verde*/
+.slot3{ background: #F4511E; } /* rossarancione */
+.slot4{ background: #C2185B; } /* rosa */
+.slot5{ background: #FDD835; } /*giallo */
+.slot6{ background: #8E24AA; } /* viola */
+.slot7{ background: #c62828;} /*arancione*/  
